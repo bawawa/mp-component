@@ -16,6 +16,14 @@ Component({
       type: String,
       value: "一等奖"
     },
+    diam: {
+      type: String,
+      value: '20'
+    },
+    percentage: {
+      type: String,
+      value: '50'
+    }
   },
   data: {
     isClear: false, // 是否已经刮开
@@ -63,15 +71,15 @@ Component({
       for (let i = 3; i < imageData.length; i += 4) {
         if (imageData[i] === 0) count++;
       }
-      if (count / (width * height) > 0.5) {
-        this.triggerEvent("getResult",e);
+      if (count / (width * height) > this.properties.percentage * 0.01) {
+        this.triggerEvent("getResult",{});
       }
     },
     draw(event) {
       if (!this.data.isDrawing) return;
       const ctx = this.context;
       ctx.globalCompositeOperation = 'destination-out';
-      ctx.lineWidth = 20;
+      ctx.lineWidth = this.properties.diam;
       ctx.lineJoin = 'round';
       ctx.lineCap = 'round';
       const x = event.touches[0].clientX - this.canvasLeft;

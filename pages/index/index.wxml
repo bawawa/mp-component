@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <scratch prizeName="一等奖"></scratch>
+  <view class="btn" bind:tap="gotoPage" data-page="scratch">刮刮乐</view>
+  <view class="more">---敬请期待---</view>
 </view>

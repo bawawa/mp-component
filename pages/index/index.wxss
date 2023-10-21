@@ -1,19 +1,20 @@
-/**index.wxss**/
-.userinfo {
+
+.btn{
+  width: 160px;
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  color: #aaa;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(38, 102, 221);
+  color: white;
+  transition: all 20ms linear;
 }
 
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.btn:active{
+  background-color: rgb(8, 73, 196);
 }
 
-.usermotto {
-  margin-top: 200px;
+.more{
+  margin-top: 30px;
 }

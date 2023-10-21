@@ -5,6 +5,10 @@ const app = getApp()
 Page({
   data: {},
   
+  gotoPage(e){
+    let page = e.currentTarget.dataset.page;
+    wx.navigateTo({url: `/pages/${page}/${page}`})
+  }
   
   
 })
