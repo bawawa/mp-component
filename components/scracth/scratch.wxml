@@ -1,0 +1,5 @@
+<view style="position:relative;width: {{width}}px; height:{{height}}px;">
+    <view class='prize_txt'>{{prizeName}}</view>
+    <canvas type="2d" id="lottery" bind:touchstart="touchStart" 
+    bind:touchmove="draw" bind:touchend="touchEnd" style="position: absolute;top: 0;background: transparent"></canvas>
+</view>

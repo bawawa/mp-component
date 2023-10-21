@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <scratch prizeName="一等奖"></scratch>
+</view>
