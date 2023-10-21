@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <scratch bind:getResult="complete" prizeName="一等奖"></scratch>
+  <view wx:if="{{visible}}" class="desc">刮奖完成</view>
+</view>
