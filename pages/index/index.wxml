@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
   <view class="btn" bind:tap="gotoPage" data-page="scratch">刮刮乐</view>
+  <!-- <view class="btn">盲盒</view> -->
   <view class="more">---敬请期待---</view>
 </view>
